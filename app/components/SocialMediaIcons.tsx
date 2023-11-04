@@ -6,7 +6,7 @@ import GoogleSVG from "../../public/icons/google.svg";
 export default function SocialMediaIcons() {
   const socialMediaList = [FacebookSVG, InstagramSVG, MetaSVG, GoogleSVG];
   return (
-    <ul className="grid grid-cols-2 grid-rows-2 w-fit gap-2">
+    <ul className="grid grid-cols-4 xl:grid-cols-2 xl:grid-rows-2 min-w-[76px] w-fit gap-2">
       {socialMediaList.map((Icon) => (
         <Icon KEY={crypto.randomUUID()} className="w-10 col-span-1" />
       ))}
