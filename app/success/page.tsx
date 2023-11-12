@@ -7,7 +7,7 @@ export default function ContactSuccess() {
       <h1 className="mb-6">We got it!</h1>
       <p className="max-w-[55ch] text-center">
         Your form has been successfully submited. We will reach out in the very
-        near future. We're just as excited as you are to propel your business
+        near future. We&apos;re just as excited as you are to propel your business
         toward greater success. Talk to you soon!
       </p>
       <SuccessSVG className="mt-8 mb-10" />
