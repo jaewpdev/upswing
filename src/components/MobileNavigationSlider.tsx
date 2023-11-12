@@ -23,7 +23,7 @@ export default function MobileNavigationSlider({
 
   return (
     <div
-      className={`fixed bottom-0 h-mobile-nav w-screen bg-white z-50 duration-100 p-4 flex flex-col ${
+      className={`fixed bottom-0 h-screen w-screen bg-white z-50 duration-100 p-4 flex flex-col pt-[72px] ${
         isOpen ? "left-0" : "left-full"
       }`}
     >
@@ -34,7 +34,7 @@ export default function MobileNavigationSlider({
             key={href}
             className="text-2xl py-2 px-4 -mx-4"
             onClick={(e) => handleOnClick(e, href)}
-          >
+          > 
             {text}
           </a>
         ))}

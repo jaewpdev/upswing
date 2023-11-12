@@ -38,7 +38,7 @@ export default function Nav() {
 
   return (
     <>
-      <div className="w-screen py-4 lg:py-8 bg-white fixed top-0 left-0 z-[50]">
+      <div className="w-screen py-4 lg:py-8 bg-white fixed top-0 left-0 z-[51]">
         <div className="container mx-auto relative flex justify-between items-center">
           <Logo className="z-10" />
           <nav className="absolute inset-0  hidden md:flex justify-center items-center gap-2  ">
