@@ -8,8 +8,8 @@ export const navItems = [
         href: "#about-us"
     },
     {
-        text: "Our Works",
-        href: "#our-works"
+        text: "What We Do",
+        href: "#what-we-do"
     },
     {
         text: "No Risk",

@@ -10,35 +10,55 @@
   @apply bg-brand-gray text-brand-black rounded-[32px] p-8;
 }
 
+.white-rounded-section {
+  @apply bg-white text-brand-black rounded-[32px] p-8;
+}
+
 .green-rounded-section {
   @apply bg-brand-green text-white rounded-[32px] p-8;
 }
 
 p {
-    @apply text-lg leading-8;
+  @apply text-lg leading-8;
 }
 
 h1 {
   @apply text-6xl sm:text-7xl   md:text-8xl 2xl:text-9xl font-light;
 }
 
+h2 {
+  @apply text-3xl leading-[42px] md:text-4xl md:leading-[52px] 2xl:text-5xl font-light 2xl:leading-[72px];
+}
 
 h3 {
-    @apply  text-2xl leading-[40px] 2xl:text-3xl 2xl:leading-[46px] font-light;
+  @apply text-2xl leading-[40px] 2xl:text-3xl 2xl:leading-[46px] font-light;
 }
 
 h4 {
   @apply text-2xl;
 }
 
-.black-arrow {
-    path {
-        stroke: #252525;
-    }
+.black-arrow path {
+  stroke: #252525;
 }
 
-.white-arrow {
-    path {
-        stroke: white;
-    }
+.white-arrow path {
+  stroke: white;
+}
+
+.sub-tag {
+  @apply text-lg font-light leading-tight tracking-[6px] whitespace-nowrap;
+}
+
+.primary-button:hover path,
+.primary-button:focus path {
+  stroke: #252525;
+  transition: all 0.3s;
+}
+
+
+.outline-button:hover path,
+.outline-button:focus path {
+  stroke: white;
+  transition: all 0.3s;
 }

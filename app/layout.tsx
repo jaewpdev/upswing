@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import Nav from "./components/Nav";
+import Nav from "../src/components/Nav";
+import Footer from "../src/components/Footer";
+import { ContactProvider } from "@/src/context/contactContext";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -17,11 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${manrope.className} pt-[72px] md:pt-[128px]`}>
-        <Nav />
-        {children}
-      </body>
-    </html>
+    <ContactProvider>
+      <html lang="en">
+        <body className={`${manrope.className} pt-[72px] md:pt-[128px]`}>
+          <Nav />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ContactProvider>
   );
 }

@@ -7,8 +7,11 @@ import Button from "./Button";
 import HamburgerMenu from "./HamburgerMenu";
 import Logo from "./Logo";
 import MobileNavigationSlider from "./MobileNavigationSlider";
+import useSmoothNavigate from "../hooks/useSmoothNavigate";
 
 export default function Nav() {
+  const handleSmoothScroll = useSmoothNavigate();
+
   const [mobileNavigationSliderIsOpen, setMobileNavigationSliderIsOpen] =
     useState(false);
 
@@ -35,7 +38,7 @@ export default function Nav() {
 
   return (
     <>
-      <div className="w-screen py-4 lg:py-8 bg-white fixed top-0 left-0">
+      <div className="w-screen py-4 lg:py-8 bg-white fixed top-0 left-0 z-[50]">
         <div className="container mx-auto relative flex justify-between items-center">
           <Logo className="z-10" />
           <nav className="absolute inset-0  hidden md:flex justify-center items-center gap-2  ">
@@ -44,12 +47,20 @@ export default function Nav() {
                 key={href}
                 href={href}
                 className="px-2 py-2  hover:text-brand-green"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSmoothScroll(e, href);
+                }}
               >
                 {text}
               </a>
             ))}
           </nav>
-          <Button variant="secondary" className="z-10 hidden md:flex">
+          <Button
+            variant="secondary"
+            className="z-10 hidden md:flex"
+            href="/contact"
+          >
             Get Started
           </Button>
 

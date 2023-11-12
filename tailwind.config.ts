@@ -5,6 +5,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -14,7 +15,7 @@ const config: Config = {
       colors: {
         brand: {
           black: "#252525",
-          green: "#34bb8b",
+          green: "#5272F2",
           gray: "#f5f5f5",
         },
       },

@@ -1,10 +1,10 @@
-import ArrowButton from "../components/ArrowButton";
-import Button from "../components/Button";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import ArrowButton from "../../src/components/ArrowButton";
+import Button from "../../src/components/Button";
+import SocialMediaIcons from "../../src/components/SocialMediaIcons";
 
 export default function LandingHeroSection() {
   return (
-    <section className="container mx-auto pt-10">
+    <section id="home" className="container mx-auto -mt-[160px] pt-[180px] mb-10">
 
       <div className="sm:grid grid-rows-7 xl:grid-rows-8 grid-flow-col grid-cols-12 gap-4">
 
